@@ -1,7 +1,7 @@
 const SinglePageDrink = ({ params }) => {
-  console.log(params.id);
+  console.log(params);
 
-  return <div>SinglePageDrink</div>;
+  return <div>{params.id}</div>;
 };
 
 export default SinglePageDrink;
