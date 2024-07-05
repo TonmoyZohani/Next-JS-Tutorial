@@ -1,4 +1,6 @@
-const SinglePageDrink = () => {
+const SinglePageDrink = ({ params }) => {
+  console.log(params.id);
+
   return <div>SinglePageDrink</div>;
 };
 
