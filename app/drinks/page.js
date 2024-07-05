@@ -5,7 +5,7 @@ const fetchDrinks = async () => {
   const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error("There is an error bro");
+    throw new Error("Failed to fecth drinks");
   }
 
   const data = response.json();
