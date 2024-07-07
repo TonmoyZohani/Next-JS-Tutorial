@@ -1,24 +1,24 @@
 import Link from "next/link";
 import React from "react";
 
-// const links = [
-//   {
-//     href: "/client",
-//     label: "client",
-//   },
-//   {
-//     href: "/drinks",
-//     label: "drinks",
-//   },
-//   {
-//     href: "/query",
-//     label: "query",
-//   },
-//   {
-//     href: "/tasks",
-//     label: "tasks",
-//   },
-// ];
+const links = [
+  {
+    href: "/client",
+    label: "client",
+  },
+  {
+    href: "/drinks",
+    label: "drinks",
+  },
+  {
+    href: "/query",
+    label: "query",
+  },
+  {
+    href: "/tasks",
+    label: "tasks",
+  },
+];
 
 const NavBar = () => {
   return (
