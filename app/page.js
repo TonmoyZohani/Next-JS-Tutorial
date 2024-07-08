@@ -7,7 +7,7 @@ const HomePage = () => {
     <div>
       <h1 className="text-5xl mb-8 font-bold">Next.js Tutorial</h1>
 
-      This is link
+      {/* This is link */}
       <Link href="/client" className="btn btn-accent">
         Get Started
       </Link>
