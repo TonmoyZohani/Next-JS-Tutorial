@@ -22,3 +22,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+//  In the provided Next.js code, the children prop in the RootLayout function represents the content of
+//  the pages that are wrapped by this layout. When you define a layout component like RootLayout,
+//   Next.js will automatically pass the page content (the component tree of the current page) to this children prop.
