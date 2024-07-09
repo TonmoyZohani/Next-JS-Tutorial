@@ -3,6 +3,8 @@ import Link from "next/link";
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 
 const getSingleDrink = async (id) => {
+  // get single page drinks
+
   const res = await fetch(`${url}${id}`);
 
   if (!res.ok) {
@@ -12,7 +14,6 @@ const getSingleDrink = async (id) => {
 };
 
 const SingleDrink = async ({ params }) => {
-
   // will get the params from dynamic route [id]
 
   const data = await getSingleDrink(params.id);
