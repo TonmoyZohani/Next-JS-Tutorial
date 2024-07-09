@@ -2,6 +2,7 @@ import DrinksList from "@/components/DrinksList";
 
 const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
 
+// used async to fetch data
 const fetchDrinks = async () => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   const response = await fetch(url);
@@ -10,7 +11,7 @@ const fetchDrinks = async () => {
     throw new Error("Failed to fecth drinks");
   }
 
-  const data =aw response.json();
+  const data =await response.json();
   return data;
 };
 
