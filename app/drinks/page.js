@@ -10,7 +10,7 @@ const fetchDrinks = async () => {
     throw new Error("Failed to fecth drinks");
   }
 
-  const data = response.json();
+  const data =aw response.json();
   return data;
 };
 
