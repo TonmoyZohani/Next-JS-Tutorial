@@ -12,6 +12,9 @@ const getSingleDrink = async (id) => {
 };
 
 const SingleDrink = async ({ params }) => {
+
+  // will get the params from dynamic route [id]
+
   const data = await getSingleDrink(params.id);
   const title = data?.drinks[0]?.strDrink;
   const drinkImg = data?.drinks[0]?.strDrinkThumb;
