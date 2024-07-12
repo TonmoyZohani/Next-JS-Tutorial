@@ -10,9 +10,13 @@ const links = [
     href: "/drinks",
     label: "drinks",
   },
+  // {
+  //   href: "/query",
+  //   label: "query",
+  // },
   {
-    href: "/query",
-    label: "query",
+    href: "/prisma-example",
+    label: "prisma",
   },
   {
     href: "/tasks",
