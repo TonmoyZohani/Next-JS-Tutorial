@@ -25,6 +25,7 @@ const initialState = {
 
 const TaskForm = () => {
   const [state, formAction] = useFormState(createTaskCustom, initialState);
+  // here state is the previous state (initialState) and formAction is used to control the state
 
   return (
     <form action={formAction}>
