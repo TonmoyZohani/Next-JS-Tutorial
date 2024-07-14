@@ -11,16 +11,30 @@ export const getAllTasks = async () => {
   });
 };
 
-export const createTask = async (formData) => {
-  const content = formData.get("content");
+// export const createTask = async (formData) => {
+//   const content = formData.get("content");
+
+//   await prisma.task.create({
+//     data: {
+//       content: content,
+//     },
+//   });
+
+//   revalidatePath("/tasks");
+// };
+
+export const createTaskCustom = async (formData) => {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  const content = formData.get('content');
+  // some validation here
 
   await prisma.task.create({
     data: {
-      content: content,
+      content,
     },
   });
-
-  revalidatePath("/tasks");
+  // revalidate path
+  revalidatePath('/tasks');
 };
 
 export const deleteTask = async (formData) => {
@@ -51,7 +65,5 @@ export const editTask = async (formData) => {
       completed: completed === 'on' ? true : false,
     },
   });
-  // redirect won't works unless the component has 'use client'
-  // another option, setup the editTask in the component directly
   redirect('/tasks');
 };
