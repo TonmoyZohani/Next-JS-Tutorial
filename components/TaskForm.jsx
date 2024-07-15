@@ -27,20 +27,20 @@ const TaskForm = () => {
   const [state, formAction] = useFormState(createTaskCustom, initialState);
   // here state is the previous state (initialState) and formAction is used to control the state
 
-  return (
-    <form action={formAction}>
-      {state.message ? <p className='mb-2'>{state.message}</p> : null}
-      <div className='join w-full'>
-        <input
-          className='input input-bordered join-item w-full'
-          placeholder='Type Here'
-          type='text'
-          name='content'
-          required
-        />
-        <SubmitButton />
-      </div>
-    </form>
-  );
-};
+//   return (
+//     <form action={formAction}>
+//       {state.message ? <p className='mb-2'>{state.message}</p> : null}
+//       <div className='join w-full'>
+//         <input
+//           className='input input-bordered join-item w-full'
+//           placeholder='Type Here'
+//           type='text'
+//           name='content'
+//           required
+//         />
+//         <SubmitButton />
+//       </div>
+//     </form>
+//   );
+// };
 export default TaskForm;
