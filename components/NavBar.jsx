@@ -24,24 +24,24 @@ const links = [
   },
 ];
 
-const NavBar = () => {
-  return (
-    <nav className="bg-base-300 py-4">
-      <div className="navbar px-8 max-w-6xl max-auto flex-col">
-        <Link href="/" className="btn btn-primary">
-          Next.js
-        </Link>
+// const NavBar = () => {
+//   return (
+//     <nav className="bg-base-300 py-4">
+//       <div className="navbar px-8 max-w-6xl max-auto flex-col">
+//         <Link href="/" className="btn btn-primary">
+//           Next.js
+//         </Link>
 
-        <ul className="menu menu-horizontal">
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link href={link.href} className="capitalize">{link.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
-  );
-};
+//         <ul className="menu menu-horizontal">
+//           {links.map((link) => (
+//             <li key={link.href}>
+//               <Link href={link.href} className="capitalize">{link.label}</Link>
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+//     </nav>
+//   );
+// };
 
 export default NavBar;
