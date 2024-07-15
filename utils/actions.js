@@ -57,19 +57,19 @@ export const getTask = async (id)=>{
   })
 }
 
-export const editTask = async (formData) => {
-  const id = formData.get('id');
-  const content = formData.get('content');
-  const completed = formData.get('completed');
+// export const editTask = async (formData) => {
+//   const id = formData.get('id');
+//   const content = formData.get('content');
+//   const completed = formData.get('completed');
 
-  await prisma.task.update({
-    where: {
-      id: id,
-    },
-    data: {
-      content: content,
-      completed: completed === 'on' ? true : false,
-    },
-  });
-  redirect('/tasks');
-};
+//   await prisma.task.update({
+//     where: {
+//       id: id,
+//     },
+//     data: {
+//       content: content,
+//       completed: completed === 'on' ? true : false,
+//     },
+//   });
+//   redirect('/tasks');
+// };
