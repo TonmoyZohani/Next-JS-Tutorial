@@ -1,4 +1,14 @@
-import { deleteTask } from "@/utils/actions";
+'use client';
+import { useFormStatus } from 'react-dom';
+import { deleteTask } from '@/utils/actions';
+
+const SubmitBtn=()=>{
+  const {pending} = useFormStatus();
+
+  return (
+    <button></button>
+  )
+}
 
 const DeleteForm = ({ id }) => {
   return (
