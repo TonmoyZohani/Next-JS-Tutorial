@@ -2,7 +2,7 @@
 
 import { Toaster } from "react-hot-toast";
 
-const providers = ({ children }) => {
+const Providers = ({ children }) => {
   return (
     <>
       <Toaster />
@@ -11,4 +11,4 @@ const providers = ({ children }) => {
   );
 };
 
-export default providers;
+export default Providers;
